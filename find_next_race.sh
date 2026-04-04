@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # Main orchestrator. Finds the next UCI race containing a preferred rider,
 # then writes output.json.
 
@@ -8,7 +8,8 @@ SCRIPT_DIR="$(dirname "$0")"
 generated_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)
 
 # Load preferred riders into an array (one per line, skip blank lines)
-riders=("${(@f)$(grep -v '^[[:space:]]*$' "${SCRIPT_DIR}/riders.txt")}")
+riders=()
+while IFS= read -r line; do riders+=("$line"); done < <(grep -v '^[[:space:]]*$' "${SCRIPT_DIR}/riders.txt")
 
 # Fetch full race list as TSV: DATE\tRACE_NAME
 races_tsv=$("${SCRIPT_DIR}/fetch_races.sh")
@@ -21,11 +22,13 @@ if [ -z "$races_tsv" ]; then
 fi
 
 # Collect unique dates in order (dates are simple YYYY-MM-DD, safe to word-split)
-dates=("${(@f)$(echo "$races_tsv" | awk -F'\t' '{print $1}' | sort -u)}")
+dates=()
+while IFS= read -r line; do dates+=("$line"); done < <(echo "$races_tsv" | awk -F'\t' '{print $1}' | sort -u)
 
 for race_date in "${dates[@]}"; do
   # All races on this date — use line-by-line splitting to preserve names with spaces
-  race_names=("${(@f)$(echo "$races_tsv" | awk -F'\t' -v d="$race_date" '$1 == d {print $2}')}")
+  race_names=()
+  while IFS= read -r line; do race_names+=("$line"); done < <(echo "$races_tsv" | awk -F'\t' -v d="$race_date" '$1 == d {print $2}')
 
   matched_races_json="[]"
   found_any=0

@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # Usage: ./slugify.sh "Ronde van Vlaanderen"
 # Outputs: ronde-van-vlaanderen
 

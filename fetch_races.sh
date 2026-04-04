@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # Fetches UCI race calendar and outputs DATE\tRACE_NAME (tab-separated), sorted chronologically.
 # Filters to races strictly after today.
 

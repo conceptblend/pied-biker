@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 PASS=0
 FAIL=0
 

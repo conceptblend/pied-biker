@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # Usage: ./fetch_startlist.sh SLUG YEAR
 # Outputs newline-separated rider names (firstName lastName) to stdout.
 # Empty output if no startlist found or parse fails.
