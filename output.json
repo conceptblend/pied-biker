@@ -1,24 +1,20 @@
 {
-  "generated_at": "2026-04-05T18:36:50Z",
-  "race_date": "2026-04-05",
+  "generated_at": "2026-04-05T18:58:42Z",
+  "race_date": "2026-04-06",
   "races": [
     {
-      "name": "Tour of Flanders",
-      "date": "2026-04-05",
-      "url": "https://www.domestiquecycling.com/en/cycling-races/ronde-van-vlaanderen/2026/startlist/",
-      "country": "Belgium",
-      "time_start": "09:00",
-      "time_end": "15:48",
-      "distance": 278.19999999999999,
-      "location_start": "Antwerpen",
-      "location_end": "Oudenaarde",
-      "stage_info": null,
-      "matched_riders": [
-        "Tadej Pogacar",
-        "Mathieu van der Poel",
-        "Remco Evenepoel",
-        "Wout van Aert"
-      ]
+      "name": "Itzulia Basque Country",
+      "date": "2026-04-06",
+      "url": "https://www.domestiquecycling.com/en/cycling-races/itzulia-basque-country/2026/startlist/",
+      "country": "Spain",
+      "time_start": "13:30",
+      "time_end": "16:40",
+      "distance": 13.9,
+      "location_start": "Bilbao",
+      "location_end": "Bilbao",
+      "stage_info": "Stage 1 of 6",
+      "startlist_status": "no_match",
+      "matched_riders": []
     }
   ]
 }
