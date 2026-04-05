@@ -59,13 +59,13 @@ assert_eq "Strade Bianche" \
 echo ""
 echo "fetch_startlist.sh live tests (requires network):"
 
-# This test hits the live Domestique API
-assert_contains "Ronde van Vlaanderen 2026 startlist contains Tadej Pogacar" \
+# Uses edition URL directly (no more slug+year)
+assert_contains "RvV 2026 startlist contains Tadej Pogacar" \
   "Tadej Pogacar" \
-  "$(./fetch_startlist.sh ronde-van-vlaanderen 2026)"
+  "$(./fetch_startlist.sh 'https://www.domestiquecycling.com/en/cycling-races/ronde-van-vlaanderen/2026/')"
 
 # ---------------------------------------------------------------------------
-# output.json schema test (requires network — hits live UCI + Domestique APIs)
+# output.json schema + content tests (requires network)
 # ---------------------------------------------------------------------------
 echo ""
 echo "output.json schema tests (requires network):"
@@ -87,6 +87,27 @@ assert_contains "output.json contains race_date" \
 assert_contains "output.json contains races array" \
   "races" \
   "$(jq 'keys[]' output.json 2>/dev/null)"
+
+# If a race was found, validate the enriched fields are present
+if jq -e '.races | length > 0' output.json >/dev/null 2>&1; then
+  assert_contains "race object contains country" \
+    "country" \
+    "$(jq '.races[0] | keys[]' output.json 2>/dev/null)"
+
+  assert_contains "race object contains distance" \
+    "distance" \
+    "$(jq '.races[0] | keys[]' output.json 2>/dev/null)"
+
+  assert_contains "race object contains location_start" \
+    "location_start" \
+    "$(jq '.races[0] | keys[]' output.json 2>/dev/null)"
+
+  assert_contains "race object contains stage_info key" \
+    "stage_info" \
+    "$(jq '.races[0] | keys[]' output.json 2>/dev/null)"
+else
+  echo "  SKIP: enriched field tests (no races in output — matchcenter window may be empty)"
+fi
 
 # ---------------------------------------------------------------------------
 # Summary
