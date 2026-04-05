@@ -1,7 +1,7 @@
 #!/bin/bash
 # Fetches upcoming UWT Road races from Domestique matchcenter.
 # Outputs one JSON object per line, sorted by race start date.
-# Filters: category 1.UWT or 2.UWT, discipline Road, start date >= today.
+# Filters: category 1.UWT or 2.UWT, discipline Road, start date > today.
 # Multi-stage races are deduplicated to stage 1 only.
 
 today=$(date +%Y-%m-%d)
@@ -16,7 +16,7 @@ echo "$matchcenter" | jq -r --arg today "$today" '
   | map(select(
       (.race.category == "1.UWT" or .race.category == "2.UWT")
       and .race.discipline == "Road"
-      and .edition.date[0] >= $today
+      and .edition.date[0] > $today
     ))
   | group_by(.race.raceId)
   | map(sort_by(.stageNumber) | first)

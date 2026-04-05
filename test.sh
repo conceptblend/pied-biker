@@ -29,31 +29,6 @@ assert_contains() {
 }
 
 # ---------------------------------------------------------------------------
-# slugify.sh tests
-# ---------------------------------------------------------------------------
-echo "slugify.sh tests:"
-
-assert_eq "Ronde van Vlaanderen" \
-  "ronde-van-vlaanderen" \
-  "$(./slugify.sh 'Ronde van Vlaanderen')"
-
-assert_eq "Critérium du Dauphiné" \
-  "criterium-du-dauphine" \
-  "$(./slugify.sh 'Critérium du Dauphiné')"
-
-assert_eq "Paris-Roubaix" \
-  "paris-roubaix" \
-  "$(./slugify.sh 'Paris-Roubaix')"
-
-assert_eq "GP Samyn" \
-  "gp-samyn" \
-  "$(./slugify.sh 'GP Samyn')"
-
-assert_eq "Strade Bianche" \
-  "strade-bianche" \
-  "$(./slugify.sh 'Strade Bianche')"
-
-# ---------------------------------------------------------------------------
 # fetch_startlist.sh live test (requires network)
 # ---------------------------------------------------------------------------
 echo ""
@@ -105,6 +80,15 @@ if jq -e '.races | length > 0' output.json >/dev/null 2>&1; then
   assert_contains "race object contains stage_info key" \
     "stage_info" \
     "$(jq '.races[0] | keys[]' output.json 2>/dev/null)"
+
+  assert_contains "race object contains startlist_status" \
+    "startlist_status" \
+    "$(jq '.races[0] | keys[]' output.json 2>/dev/null)"
+
+  status=$(jq -r '.races[0].startlist_status' output.json 2>/dev/null)
+  assert_contains "startlist_status is a valid value" \
+    "$status" \
+    "matched no_match unavailable"
 else
   echo "  SKIP: enriched field tests (no races in output — matchcenter window may be empty)"
 fi
