@@ -1,6 +1,6 @@
 ---
 date: 2026-04-04
-status: accepted
+status: superseded by ADR 8
 ---
 
 # ADR 6: Missing Startlist Treated as No Match
@@ -18,3 +18,5 @@ Treat a missing or empty startlist (404 or no data) as "no match" — do not abo
 - The workflow never stalls waiting for a startlist to be published.
 - If the actual next race with a watched rider hasn't had its startlist published yet, the tool will incorrectly report a later race as the next match.
 - This is an acceptable trade-off: the workflow runs weekly, so once the startlist is published the next run will self-correct and report the right race.
+
+> **Note (2026-04-05):** Superseded by ADR 8. The "skip and advance" approach was abandoned because startlists are frequently unpublished until very close to race day, causing the tool to silently skip the actual next race in favour of a later one. The new approach always reports the next race with an explicit `startlist_status` field.

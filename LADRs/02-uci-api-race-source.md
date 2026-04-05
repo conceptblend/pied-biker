@@ -1,6 +1,6 @@
 ---
 date: 2026-04-04
-status: accepted
+status: superseded by ADR 7
 ---
 
 # ADR 2: UCI API as Race Calendar Source

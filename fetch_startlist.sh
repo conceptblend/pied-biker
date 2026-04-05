@@ -1,11 +1,10 @@
 #!/bin/bash
-# Usage: ./fetch_startlist.sh SLUG YEAR
+# Usage: ./fetch_startlist.sh EDITION_URL
 # Outputs newline-separated rider names (firstName lastName) to stdout.
 # Empty output if no startlist found or parse fails.
 
-SLUG=$1
-YEAR=$2
-URL="https://www.domestiquecycling.com/en/cycling-races/${SLUG}/${YEAR}/startlist/"
+EDITION_URL=$1
+URL="${EDITION_URL}startlist/"
 
 html=$(curl -s "$URL")
 

@@ -1,6 +1,6 @@
 ---
 date: 2026-04-04
-status: accepted
+status: superseded by ADR 7
 ---
 
 # ADR 4: Slug Derivation via iconv Transliteration
@@ -18,3 +18,5 @@ Derive Domestique URL slugs from UCI race names using the following pipeline: st
 - Handles the common case of accented characters automatically.
 - A small number of edge cases will still produce incorrect slugs — for example, abbreviations like "GP" that Domestique may expand, special punctuation not handled by TRANSLIT, or races whose Domestique slug differs from the UCI name for other reasons.
 - A manual override map (e.g., a `slug-overrides.txt` lookup file) may be needed eventually to patch known failures without touching the core logic.
+
+> **Note (2026-04-05):** Slug derivation is no longer used in the main pipeline. ADR 7 replaces the UCI API + slug approach with Domestique's own `matchcenter` data, which provides `edition.url` directly. `slugify.sh` is retained but is no longer called by `find_next_race.sh`.
