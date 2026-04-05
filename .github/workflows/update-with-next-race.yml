@@ -22,11 +22,13 @@ jobs:
       - name: Run find_next_race.sh
         run: ./find_next_race.sh
 
+      - name: Stage output for deploy
+        run: mkdir -p _deploy && cp output.json _deploy/output.json
+
       - name: Deploy output.json to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
+          publish_dir: _deploy
           publish_branch: gh-pages
-          include_only: output.json
-          keep_files: true
+          keep_files: false
