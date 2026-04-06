@@ -75,8 +75,8 @@ for race_json in "${next_date_races[@]}"; do
     --arg     date           "$race_date" \
     --arg     url            "${edition_url}startlist/" \
     --arg     country        "$(echo "$race_json" | jq -r '.country')" \
-    --arg     time_start     "$(echo "$race_json" | jq -r '.time_start')" \
-    --arg     time_end       "$(echo "$race_json" | jq -r '.time_end')" \
+    --argjson time_start     "$(echo "$race_json" | jq '.time_start')" \
+    --argjson time_end       "$(echo "$race_json" | jq '.time_end')" \
     --argjson distance       "$(echo "$race_json" | jq '.distance')" \
     --arg     location_start "$(echo "$race_json" | jq -r '.location_start')" \
     --arg     location_end   "$(echo "$race_json" | jq -r '.location_end')" \
