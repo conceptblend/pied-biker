@@ -1,20 +1,5 @@
 {
-  "generated_at": "2026-04-07T19:13:41Z",
-  "race_date": "2026-04-12",
-  "races": [
-    {
-      "name": "Paris-Roubaix",
-      "date": "2026-04-12",
-      "url": "https://www.domestiquecycling.com/en/cycling-races/paris-roubaix/2026/startlist/",
-      "country": "France",
-      "time_start": null,
-      "time_end": null,
-      "distance": 258.30000000000001,
-      "location_start": "Compiegne",
-      "location_end": "Roubaix",
-      "stage_info": null,
-      "startlist_status": "unavailable",
-      "matched_riders": []
-    }
-  ]
+  "generated_at": "2026-04-08T19:26:29Z",
+  "race_date": null,
+  "races": []
 }
