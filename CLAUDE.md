@@ -1,6 +1,6 @@
 ## Purpose
 
-This repo (working title "Bike Buddy") is for a simple tool that extracts information about upcoming UCI road racing events and publishes the next event with preferred riders in it.
+This repo (working title "Pied Biker") is for a simple tool that extracts information about upcoming UCI road racing events and publishes the next event with preferred riders in it.
 
 ### Principles
 

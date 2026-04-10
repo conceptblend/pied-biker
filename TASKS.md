@@ -1,63 +1,54 @@
 # Bike Buddy — Tasks
 
 ## Status legend
-- [x] todo
 - [x] done
 - [~] in progress
+- [ ] todo
 
 ---
 
 ## Phase 1 — Core implementation
 
 ### T1 · Config & watchlist
-- [x] `riders.txt` — sample watchlist (one rider per line, `firstName lastName`)
-- [x] `config.sh` — exports `SEASON_ID=1056` and `YEAR=2026`
+- [x] `riders.txt` — watchlist, one `firstName lastName` per line
 
-### T2 · Slug normalization
-- [x] `slugify.sh RACE_NAME` — normalizes a UCI race name to a Domestique URL slug
-  - Strip accents via `iconv -t ASCII//TRANSLIT`
-  - Lowercase + replace spaces with hyphens
-  - Strip punctuation (apostrophes, periods, commas)
+### T2 · Race fetcher
+- [x] `fetch_races.sh` — fetches Domestique races page, extracts `race_calendar` and `matchcenter`, outputs enriched JSON lines sorted by date
+  - Filter `race_calendar` to `category` in `["1.UWT", "2.UWT"]` and `state` in `["upcoming", "ongoing"]`
+  - Join `matchcenter` by URL for enrichment (time, distance, location, stage info)
+  - Trailing `;` stripped from both JS variables before jq processing
 
-### T3 · UCI race fetcher
-- [x] `fetch_races.sh` — fetches UCI calendar, outputs TSV lines: `DATE\tRACE_NAME`
-  - Filter to dates strictly after today
-  - Sort chronologically
-  - Dedup (multi-day races appear once per start date)
+### T3 · Startlist fetcher
+- [x] `fetch_startlist.sh EDITION_URL` — curls Domestique edition page, extracts rider names from `var edition_data`
+  - Output: newline-separated `firstName lastName`, empty on failure
 
-### T4 · Domestique startlist fetcher
-- [x] `fetch_startlist.sh SLUG YEAR` — curls Domestique page, extracts rider names
-  - Grep for `var startList` or `startList:` JS variable in raw HTML
-  - Output newline-separated `firstName lastName` list, or empty on failure
+### T4 · Main orchestrator
+- [x] `find_next_race.sh` — orchestrates T2/T3, writes `output.json`
+  - Selects earliest date from race list
+  - Fetches startlist for each race on that date
+  - Sets `startlist_status`: `matched`, `no_match`, or `unavailable`
+  - Always reports the next race regardless of startlist availability (ADR 8)
+  - Sources `.env` if present (for `BIKE_BUDDY_DEBUG`)
 
-### T5 · Main logic
-- [x] `find_next_race.sh` — orchestrates T3/T4, writes `output.json`
-  - Walk UCI races chronologically from tomorrow
-  - For each date, check all races' startlists against `riders.txt`
-  - Stop at first date with ≥1 match; collect all matching races that day
-  - Emit `output.json` matching the schema in REQUIREMENTS.md
-  - Handle no-match-all-season case (empty result)
+### T5 · GitHub Action
+- [x] `.github/workflows/update-with-next-race.yml`
+  - Daily cron: `0 18 * * *`
+  - `workflow_dispatch` for manual runs
+  - Steps: checkout → install jq → run `find_next_race.sh` → deploy `output.json` to `gh-pages`
 
-### T6 · GitHub Action
-- [x] `.github/workflows/bike-buddy.yml`
-  - Weekly cron trigger: `0 6 * * 1`
-  - Steps: checkout → run `find_next_race.sh` → push `output.json` to `gh-pages`
-  - Use `peaceiris/actions-gh-pages` or manual git push to gh-pages
-
-### T7 · Tests
-- [x] `test.sh` — validates each script in isolation
-  - Test `slugify.sh` with plain names, accented names, multi-word names
-  - Test `fetch_startlist.sh` extracts known rider from live Domestique page
-  - Test `find_next_race.sh` output validates against expected JSON schema
-  - Exit non-zero on any failure
+### T6 · Tests
+- [x] `test.sh` — integration tests
 
 ---
 
 ## Phase 2 — LADRs
 
 - [x] `LADRs/01-shell-only-runtime.md`
-- [x] `LADRs/02-uci-api-race-source.md`
+- [x] `LADRs/02-uci-api-race-source.md` *(superseded by ADR 7)*
 - [x] `LADRs/03-domestique-startlist-extraction.md`
-- [x] `LADRs/04-slug-derivation-strategy.md`
+- [x] `LADRs/04-slug-derivation-strategy.md` *(superseded by ADR 7)*
 - [x] `LADRs/05-gh-pages-output-delivery.md`
-- [x] `LADRs/06-missing-startlist-behavior.md`
+- [x] `LADRs/06-missing-startlist-behavior.md` *(superseded by ADR 8)*
+- [x] `LADRs/07-domestique-matchcenter-race-source.md` *(superseded by ADR 9)*
+- [x] `LADRs/08-report-next-race-with-status.md`
+- [x] `LADRs/09-race-calendar-baseline-matchcenter-enrichment.md`

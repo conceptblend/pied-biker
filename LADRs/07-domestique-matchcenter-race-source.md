@@ -1,6 +1,6 @@
 ---
 date: 2026-04-05
-status: accepted
+status: superseded by ADR 9
 ---
 
 # ADR 7: Domestique matchcenter as Race Calendar Source
@@ -23,6 +23,8 @@ Replace the UCI API with the Domestique `matchcenter` variable as the race calen
 - Use `stageUrlMap[race.raceId]` length for total stage count.
 - Use `edition.url + "startlist/"` to build the startlist URL directly (no slug derivation needed).
 - For multi-stage races, include `stage_info: "Stage 1 of N"` in output; null for single-stage.
+
+> **Note (2026-04-10):** Superseded by ADR 9. The matchcenter window (~2 weeks) proved too narrow — races not yet "live" were absent, returning zero results. The new approach uses `race_calendar` (full season) for filtering and matchcenter only for enrichment.
 
 ## Consequences
 
