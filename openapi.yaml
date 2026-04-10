@@ -1,0 +1,149 @@
+openapi: 3.1.0
+
+info:
+  title: Pied Biker
+  version: "1.0"
+  description: >
+    Static JSON output published to GitHub Pages daily.
+    Reports the next upcoming UCI Men's Elite UWT road race and whether
+    any watched riders appear in its startlist.
+
+servers:
+  - url: https://conceptblend.github.io/pied-biker
+    description: GitHub Pages
+
+paths:
+  /output.json:
+    get:
+      summary: Next race report
+      responses:
+        "200":
+          description: Latest race report
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Report"
+
+components:
+  schemas:
+    Report:
+      type: object
+      required:
+        - generated_at
+        - race_date
+        - races
+      properties:
+        generated_at:
+          type: string
+          format: date-time
+          description: ISO 8601 UTC timestamp of when the report was generated.
+          examples: ["2026-04-10T00:55:54Z"]
+        race_date:
+          type: ["string", "null"]
+          format: date
+          description: >
+            Start date of the reported race. Null when no upcoming UWT races
+            are found (end-of-season or data unavailable).
+          examples: ["2026-04-06"]
+        races:
+          type: array
+          description: >
+            All races starting on race_date. Typically one entry; may be more
+            if multiple UWT races share the same start date. Empty array when
+            race_date is null.
+          items:
+            $ref: "#/components/schemas/Race"
+
+    Race:
+      type: object
+      required:
+        - name
+        - date
+        - url
+        - country
+        - time_start
+        - time_end
+        - distance
+        - location_start
+        - location_end
+        - stage_info
+        - startlist_status
+        - matched_riders
+      properties:
+        name:
+          type: string
+          description: Race title as it appears on Domestique.
+          examples: ["Itzulia Basque Country"]
+        date:
+          type: string
+          format: date
+          description: Race start date (stage 1 for multi-stage races).
+          examples: ["2026-04-06"]
+        url:
+          type: string
+          format: uri
+          description: Direct URL to the Domestique startlist page for this race.
+          examples: ["https://www.domestiquecycling.com/en/cycling-races/itzulia-basque-country/2026/startlist/"]
+        country:
+          type: string
+          description: Country where the race is held.
+          examples: ["Spain"]
+        time_start:
+          type: ["string", "null"]
+          description: >
+            Scheduled start time in HH:MM (24-hour) local race time.
+            Null if the race is not yet in the matchcenter enrichment window.
+          pattern: "^[0-2]\\d:[0-5]\\d$"
+          examples: ["12:05"]
+        time_end:
+          type: ["string", "null"]
+          description: >
+            Scheduled finish time in HH:MM (24-hour) local race time.
+            Null if the race is not yet in the matchcenter enrichment window.
+          pattern: "^[0-2]\\d:[0-5]\\d$"
+          examples: ["16:30"]
+        distance:
+          type: ["number", "null"]
+          description: >
+            Race distance in kilometres.
+            Null if the race is not yet in the matchcenter enrichment window.
+          examples: [176.2]
+        location_start:
+          type: ["string", "null"]
+          description: >
+            Name of the start town/city.
+            Null if the race is not yet in the matchcenter enrichment window.
+          examples: ["Eibar"]
+        location_end:
+          type: ["string", "null"]
+          description: >
+            Name of the finish town/city.
+            Null if the race is not yet in the matchcenter enrichment window.
+          examples: ["Eibar"]
+        stage_info:
+          type: ["string", "null"]
+          description: >
+            Human-readable stage label for multi-stage races, reflecting the
+            currently active stage. Null for single-stage races or when
+            matchcenter enrichment is unavailable.
+          examples: ["Stage 5 of 6"]
+        startlist_status:
+          type: string
+          enum:
+            - matched
+            - no_match
+            - unavailable
+          description: |
+            - `matched`     — startlist published; ≥1 watched rider confirmed
+            - `no_match`    — startlist published; no watched riders appear
+            - `unavailable` — startlist not yet published
+          examples: ["matched"]
+        matched_riders:
+          type: array
+          description: >
+            Watched riders confirmed in the startlist.
+            Empty array when startlist_status is not "matched".
+          items:
+            type: string
+            description: Rider full name in "firstName lastName" format.
+          examples: [["Paul Seixas"]]
