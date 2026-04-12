@@ -32,8 +32,9 @@ if [ -z "$races_json" ]; then
   exit 0
 fi
 
-# Take the date of the first (nearest) race
-next_date=$(echo "$races_json" | jq -r '.date' | sort -u | head -1)
+# Take the date of the first (nearest) race strictly after today
+today=$(date -u +%Y-%m-%d)
+next_date=$(echo "$races_json" | jq -r '.date' | sort -u | awk -v today="$today" '$0 > today' | head -1)
 log "next_date=$next_date"
 
 # Collect all races on that date
