@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-04-11T18:55:22Z",
-  "race_date": "2026-04-06",
+  "generated_at": "2026-04-12T01:47:50Z",
+  "race_date": "2026-04-19",
   "races": [
     {
-      "name": "Itzulia Basque Country",
-      "date": "2026-04-06",
-      "url": "https://www.domestiquecycling.com/en/cycling-races/itzulia-basque-country/2026/startlist/",
-      "country": "Spain",
-      "time_start": "13:07",
-      "time_end": "16:29",
-      "distance": 135.40000000000001,
-      "location_start": "Goizper-Antzuola",
-      "location_end": "Bergara",
-      "stage_info": "Stage 6 of 6",
+      "name": "Amstel Gold Race",
+      "date": "2026-04-19",
+      "url": "https://www.domestiquecycling.com/en/cycling-races/amstel-gold-race/2026/startlist/",
+      "country": "Netherlands",
+      "time_start": null,
+      "time_end": null,
+      "distance": 257.19999999999999,
+      "location_start": "Maastricht",
+      "location_end": "Valkenburg",
+      "stage_info": null,
       "startlist_status": "matched",
       "matched_riders": [
-        "Paul Seixas"
+        "Remco Evenepoel"
       ]
     }
   ]
