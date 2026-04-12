@@ -1,23 +1,21 @@
 {
-  "generated_at": "2026-04-12T01:52:33Z",
-  "race_date": "2026-04-12",
+  "generated_at": "2026-04-12T18:59:24Z",
+  "race_date": "2026-04-19",
   "races": [
     {
-      "name": "Paris-Roubaix",
-      "date": "2026-04-12",
-      "url": "https://www.domestiquecycling.com/en/cycling-races/paris-roubaix/2026/startlist/",
-      "country": "France",
-      "time_start": "09:50",
-      "time_end": "15:49",
-      "distance": 258.30000000000001,
-      "location_start": "Compiegne",
-      "location_end": "Roubaix",
+      "name": "Amstel Gold Race",
+      "date": "2026-04-19",
+      "url": "https://www.domestiquecycling.com/en/cycling-races/amstel-gold-race/2026/startlist/",
+      "country": "Netherlands",
+      "time_start": null,
+      "time_end": null,
+      "distance": 257.19999999999999,
+      "location_start": "Maastricht",
+      "location_end": "Valkenburg",
       "stage_info": null,
       "startlist_status": "matched",
       "matched_riders": [
-        "Tadej Pogacar",
-        "Mathieu van der Poel",
-        "Wout van Aert"
+        "Remco Evenepoel"
       ]
     }
   ]
