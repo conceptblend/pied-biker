@@ -1,22 +1,20 @@
 {
-  "generated_at": "2026-04-18T19:00:20Z",
-  "race_date": "2026-04-19",
+  "generated_at": "2026-04-19T19:00:33Z",
+  "race_date": "2026-04-22",
   "races": [
     {
-      "name": "Amstel Gold Race",
-      "date": "2026-04-19",
-      "url": "https://www.domestiquecycling.com/en/cycling-races/amstel-gold-race/2026/startlist/",
-      "country": "Netherlands",
+      "name": "La Flèche Wallonne",
+      "date": "2026-04-22",
+      "url": "https://www.domestiquecycling.com/en/cycling-races/la-fleche-wallonne/2026/startlist/",
+      "country": "Belgium",
       "time_start": null,
       "time_end": null,
-      "distance": 257.19999999999999,
-      "location_start": "Maastricht",
-      "location_end": "Valkenburg",
+      "distance": null,
+      "location_start": null,
+      "location_end": null,
       "stage_info": null,
-      "startlist_status": "matched",
-      "matched_riders": [
-        "Remco Evenepoel"
-      ]
+      "startlist_status": "unavailable",
+      "matched_riders": []
     }
   ]
 }
