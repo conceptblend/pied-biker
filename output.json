@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-20T19:15:56Z",
+  "generated_at": "2026-04-21T19:21:16Z",
   "race_date": "2026-04-22",
   "races": [
     {
@@ -7,14 +7,16 @@
       "date": "2026-04-22",
       "url": "https://www.domestiquecycling.com/en/cycling-races/la-fleche-wallonne/2026/startlist/",
       "country": "Belgium",
-      "time_start": null,
-      "time_end": null,
-      "distance": null,
-      "location_start": null,
-      "location_end": null,
+      "time_start": "10:30",
+      "time_end": "15:23",
+      "distance": 200,
+      "location_start": "Herstal",
+      "location_end": "Huy",
       "stage_info": null,
-      "startlist_status": "unavailable",
-      "matched_riders": []
+      "startlist_status": "matched",
+      "matched_riders": [
+        "Paul Seixas"
+      ]
     }
   ]
 }
