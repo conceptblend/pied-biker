@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T19:21:27Z",
+  "generated_at": "2026-04-24T19:02:48Z",
   "race_date": "2026-04-26",
   "races": [
     {
@@ -7,14 +7,18 @@
       "date": "2026-04-26",
       "url": "https://www.domestiquecycling.com/en/cycling-races/liege-bastogne-liege/2026/startlist/",
       "country": "Belgium",
-      "time_start": null,
-      "time_end": null,
-      "distance": null,
-      "location_start": null,
-      "location_end": null,
+      "time_start": "08:55",
+      "time_end": "15:20",
+      "distance": 259.5,
+      "location_start": "Liège",
+      "location_end": "Liège",
       "stage_info": null,
-      "startlist_status": "unavailable",
-      "matched_riders": []
+      "startlist_status": "matched",
+      "matched_riders": [
+        "Tadej Pogacar",
+        "Remco Evenepoel",
+        "Paul Seixas"
+      ]
     }
   ]
 }
