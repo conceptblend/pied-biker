@@ -1,23 +1,21 @@
 {
-  "generated_at": "2026-04-25T19:02:40Z",
-  "race_date": "2026-04-26",
+  "generated_at": "2026-04-26T19:04:10Z",
+  "race_date": "2026-04-28",
   "races": [
     {
-      "name": "Liège-Bastogne-Liège",
-      "date": "2026-04-26",
-      "url": "https://www.domestiquecycling.com/en/cycling-races/liege-bastogne-liege/2026/startlist/",
-      "country": "Belgium",
-      "time_start": "08:55",
-      "time_end": "15:20",
-      "distance": 259.5,
-      "location_start": "Liège",
-      "location_end": "Liège",
-      "stage_info": null,
+      "name": "Tour de Romandie",
+      "date": "2026-04-28",
+      "url": "https://www.domestiquecycling.com/en/cycling-races/tour-de-romandie/2026/startlist/",
+      "country": "Switzerland",
+      "time_start": "14:28",
+      "time_end": "16:30",
+      "distance": 3.2000000000000002,
+      "location_start": "Villars-sur-Gläne",
+      "location_end": "Villars-sur-Gläne",
+      "stage_info": "Stage 0 of 6",
       "startlist_status": "matched",
       "matched_riders": [
-        "Tadej Pogacar",
-        "Remco Evenepoel",
-        "Paul Seixas"
+        "Tadej Pogacar"
       ]
     }
   ]
