@@ -1,22 +1,20 @@
 {
-  "generated_at": "2026-04-27T19:41:34Z",
-  "race_date": "2026-04-28",
+  "generated_at": "2026-04-28T19:48:57Z",
+  "race_date": "2026-05-01",
   "races": [
     {
-      "name": "Tour de Romandie",
-      "date": "2026-04-28",
-      "url": "https://www.domestiquecycling.com/en/cycling-races/tour-de-romandie/2026/startlist/",
-      "country": "Switzerland",
-      "time_start": "14:28",
-      "time_end": "16:30",
-      "distance": 3.2000000000000002,
-      "location_start": "Villars-sur-Gläne",
-      "location_end": "Villars-sur-Gläne",
-      "stage_info": "Stage 0 of 6",
-      "startlist_status": "matched",
-      "matched_riders": [
-        "Tadej Pogacar"
-      ]
+      "name": "Eschborn-Frankfurt",
+      "date": "2026-05-01",
+      "url": "https://www.domestiquecycling.com/en/cycling-races/eschborn-frankfurt/2026/startlist/",
+      "country": "Germany",
+      "time_start": null,
+      "time_end": null,
+      "distance": null,
+      "location_start": null,
+      "location_end": null,
+      "stage_info": null,
+      "startlist_status": "unavailable",
+      "matched_riders": []
     }
   ]
 }
