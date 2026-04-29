@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T19:48:57Z",
+  "generated_at": "2026-04-29T19:44:38Z",
   "race_date": "2026-05-01",
   "races": [
     {
@@ -7,13 +7,13 @@
       "date": "2026-05-01",
       "url": "https://www.domestiquecycling.com/en/cycling-races/eschborn-frankfurt/2026/startlist/",
       "country": "Germany",
-      "time_start": null,
-      "time_end": null,
-      "distance": null,
-      "location_start": null,
-      "location_end": null,
+      "time_start": "10:45",
+      "time_end": "16:01",
+      "distance": 211.40000000000001,
+      "location_start": "Eschborn",
+      "location_end": "Frankfurt",
       "stage_info": null,
-      "startlist_status": "unavailable",
+      "startlist_status": "no_match",
       "matched_riders": []
     }
   ]
