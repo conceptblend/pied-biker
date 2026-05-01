@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-30T19:41:23Z",
-  "race_date": "2026-05-01",
+  "generated_at": "2026-05-01T19:19:51Z",
+  "race_date": "2026-05-08",
   "races": [
     {
-      "name": "Eschborn-Frankfurt",
-      "date": "2026-05-01",
-      "url": "https://www.domestiquecycling.com/en/cycling-races/eschborn-frankfurt/2026/startlist/",
-      "country": "Germany",
-      "time_start": "10:45",
-      "time_end": "16:01",
-      "distance": 211.40000000000001,
-      "location_start": "Eschborn",
-      "location_end": "Frankfurt",
-      "stage_info": null,
+      "name": "Giro d'Italia",
+      "date": "2026-05-08",
+      "url": "https://www.domestiquecycling.com/en/cycling-races/giro-ditalia/2026/startlist/",
+      "country": "Italy",
+      "time_start": null,
+      "time_end": null,
+      "distance": 156,
+      "location_start": "Nessebar",
+      "location_end": "Burgas",
+      "stage_info": "Stage 1 of 21",
       "startlist_status": "no_match",
       "matched_riders": []
     }
