@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T19:08:32Z",
+  "generated_at": "2026-05-04T19:48:26Z",
   "race_date": "2026-05-08",
   "races": [
     {
@@ -9,12 +9,14 @@
       "country": "Italy",
       "time_start": null,
       "time_end": null,
-      "distance": 156,
+      "distance": 147,
       "location_start": "Nessebar",
       "location_end": "Burgas",
       "stage_info": "Stage 1 of 21",
-      "startlist_status": "no_match",
-      "matched_riders": []
+      "startlist_status": "matched",
+      "matched_riders": [
+        "Jonas Vingegaard"
+      ]
     }
   ]
 }
