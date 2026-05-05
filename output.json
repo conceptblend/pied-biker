@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T19:48:26Z",
+  "generated_at": "2026-05-05T19:42:57Z",
   "race_date": "2026-05-08",
   "races": [
     {
@@ -7,8 +7,8 @@
       "date": "2026-05-08",
       "url": "https://www.domestiquecycling.com/en/cycling-races/giro-ditalia/2026/startlist/",
       "country": "Italy",
-      "time_start": null,
-      "time_end": null,
+      "time_start": "11:50",
+      "time_end": "15:12",
       "distance": 147,
       "location_start": "Nessebar",
       "location_end": "Burgas",
