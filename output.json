@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01T21:38:58Z",
+  "generated_at": "2026-06-02T15:44:08Z",
   "race_date": "2026-06-07",
   "races": [
     {
@@ -9,12 +9,15 @@
       "country": "France",
       "time_start": null,
       "time_end": null,
-      "distance": null,
-      "location_start": null,
-      "location_end": null,
-      "stage_info": null,
-      "startlist_status": "unavailable",
-      "matched_riders": []
+      "distance": 146.19999999999999,
+      "location_start": "Vizille",
+      "location_end": "Saint-Ismier",
+      "stage_info": "Stage 1 of 8",
+      "startlist_status": "matched",
+      "matched_riders": [
+        "Wout van Aert",
+        "Paul Seixas"
+      ]
     }
   ]
 }
