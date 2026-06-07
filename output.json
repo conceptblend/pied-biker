@@ -1,23 +1,20 @@
 {
-  "generated_at": "2026-06-06T19:39:55Z",
-  "race_date": "2026-06-07",
+  "generated_at": "2026-06-07T19:40:24Z",
+  "race_date": "2026-06-14",
   "races": [
     {
-      "name": "Tour Auvergne - Rhône-Alpes",
-      "date": "2026-06-07",
-      "url": "https://www.domestiquecycling.com/en/cycling-races/criterium-du-dauphine/2026/startlist/",
-      "country": "France",
-      "time_start": "10:00",
-      "time_end": "13:49",
-      "distance": 146.19999999999999,
-      "location_start": "Vizille",
-      "location_end": "Saint-Ismier",
-      "stage_info": "Stage 1 of 8",
-      "startlist_status": "matched",
-      "matched_riders": [
-        "Wout van Aert",
-        "Paul Seixas"
-      ]
+      "name": "Copenhagen Sprint",
+      "date": "2026-06-14",
+      "url": "https://www.domestiquecycling.com/en/cycling-races/copenhagen-sprint/2026/startlist/",
+      "country": "Denmark",
+      "time_start": null,
+      "time_end": null,
+      "distance": null,
+      "location_start": null,
+      "location_end": null,
+      "stage_info": null,
+      "startlist_status": "no_match",
+      "matched_riders": []
     }
   ]
 }
