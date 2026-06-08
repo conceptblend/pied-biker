@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T19:40:24Z",
+  "generated_at": "2026-06-08T20:25:32Z",
   "race_date": "2026-06-14",
   "races": [
     {
@@ -9,9 +9,9 @@
       "country": "Denmark",
       "time_start": null,
       "time_end": null,
-      "distance": null,
-      "location_start": null,
-      "location_end": null,
+      "distance": 228.19999999999999,
+      "location_start": "Roskilde",
+      "location_end": "Copenhagen",
       "stage_info": null,
       "startlist_status": "no_match",
       "matched_riders": []
