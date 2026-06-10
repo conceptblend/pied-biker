@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09T20:12:51Z",
+  "generated_at": "2026-06-10T20:38:01Z",
   "race_date": "2026-06-14",
   "races": [
     {
@@ -7,8 +7,8 @@
       "date": "2026-06-14",
       "url": "https://www.domestiquecycling.com/en/cycling-races/copenhagen-sprint/2026/startlist/",
       "country": "Denmark",
-      "time_start": null,
-      "time_end": null,
+      "time_start": "09:45",
+      "time_end": "15:04",
       "distance": 228.19999999999999,
       "location_start": "Roskilde",
       "location_end": "Copenhagen",
