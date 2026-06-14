@@ -1,20 +1,23 @@
 {
-  "generated_at": "2026-06-13T19:44:16Z",
-  "race_date": "2026-06-14",
+  "generated_at": "2026-06-14T19:44:29Z",
+  "race_date": "2026-06-17",
   "races": [
     {
-      "name": "Copenhagen Sprint",
-      "date": "2026-06-14",
-      "url": "https://www.domestiquecycling.com/en/cycling-races/copenhagen-sprint/2026/startlist/",
-      "country": "Denmark",
-      "time_start": "09:45",
-      "time_end": "15:04",
-      "distance": 228.19999999999999,
-      "location_start": "Roskilde",
-      "location_end": "Copenhagen",
-      "stage_info": null,
-      "startlist_status": "no_match",
-      "matched_riders": []
+      "name": "Tour de Suisse",
+      "date": "2026-06-17",
+      "url": "https://www.domestiquecycling.com/en/cycling-races/tour-de-suisse/2026/startlist/",
+      "country": "Switzerland",
+      "time_start": null,
+      "time_end": null,
+      "distance": 144,
+      "location_start": "Sondrio",
+      "location_end": "Sondrio",
+      "stage_info": "Stage 1 of 5",
+      "startlist_status": "matched",
+      "matched_riders": [
+        "Tadej Pogacar",
+        "Mathieu van der Poel"
+      ]
     }
   ]
 }
