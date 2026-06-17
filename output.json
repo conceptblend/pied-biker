@@ -1,23 +1,20 @@
 {
-  "generated_at": "2026-06-16T21:09:53Z",
-  "race_date": "2026-06-17",
+  "generated_at": "2026-06-17T20:20:59Z",
+  "race_date": "2026-07-04",
   "races": [
     {
-      "name": "Tour de Suisse",
-      "date": "2026-06-17",
-      "url": "https://www.domestiquecycling.com/en/cycling-races/tour-de-suisse/2026/startlist/",
-      "country": "Switzerland",
+      "name": "Tour de France",
+      "date": "2026-07-04",
+      "url": "https://www.domestiquecycling.com/en/cycling-races/tour-de-france/2026/startlist/",
+      "country": "France",
       "time_start": null,
       "time_end": null,
-      "distance": 144,
-      "location_start": "Sondrio",
-      "location_end": "Sondrio",
-      "stage_info": "Stage 1 of 5",
-      "startlist_status": "matched",
-      "matched_riders": [
-        "Tadej Pogacar",
-        "Mathieu van der Poel"
-      ]
+      "distance": null,
+      "location_start": null,
+      "location_end": null,
+      "stage_info": null,
+      "startlist_status": "unavailable",
+      "matched_riders": []
     }
   ]
 }
