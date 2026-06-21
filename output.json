@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20T19:45:47Z",
+  "generated_at": "2026-06-21T19:51:05Z",
   "race_date": "2026-07-04",
   "races": [
     {
@@ -13,8 +13,14 @@
       "location_start": null,
       "location_end": null,
       "stage_info": null,
-      "startlist_status": "unavailable",
-      "matched_riders": []
+      "startlist_status": "matched",
+      "matched_riders": [
+        "Tadej Pogacar",
+        "Mathieu van der Poel",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Paul Seixas"
+      ]
     }
   ]
 }
