@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T20:05:30Z",
+  "generated_at": "2026-07-01T20:03:09Z",
   "race_date": "2026-07-04",
   "races": [
     {
@@ -7,8 +7,8 @@
       "date": "2026-07-04",
       "url": "https://www.domestiquecycling.com/en/cycling-races/tour-de-france/2026/startlist/",
       "country": "France",
-      "time_start": null,
-      "time_end": null,
+      "time_start": "16:05",
+      "time_end": "18:16",
       "distance": 19,
       "location_start": "Barcelona",
       "location_end": "Barcelona",
