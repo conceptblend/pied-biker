@@ -1,26 +1,20 @@
 {
-  "generated_at": "2026-07-03T19:37:39Z",
-  "race_date": "2026-07-04",
+  "generated_at": "2026-07-04T19:22:22Z",
+  "race_date": "2026-08-01",
   "races": [
     {
-      "name": "Tour de France",
-      "date": "2026-07-04",
-      "url": "https://www.domestiquecycling.com/en/cycling-races/tour-de-france/2026/startlist/",
-      "country": "France",
-      "time_start": "16:05",
-      "time_end": "18:16",
-      "distance": 19,
-      "location_start": "Barcelona",
-      "location_end": "Barcelona",
-      "stage_info": "Stage 1 of 21",
-      "startlist_status": "matched",
-      "matched_riders": [
-        "Tadej Pogacar",
-        "Mathieu van der Poel",
-        "Jonas Vingegaard",
-        "Remco Evenepoel",
-        "Paul Seixas"
-      ]
+      "name": "Donostia San Sebastian Klasikoa",
+      "date": "2026-08-01",
+      "url": "https://www.domestiquecycling.com/en/cycling-races/san-sebastian-klasikoa/2026/startlist/",
+      "country": "Spain",
+      "time_start": null,
+      "time_end": null,
+      "distance": null,
+      "location_start": null,
+      "location_end": null,
+      "stage_info": null,
+      "startlist_status": "unavailable",
+      "matched_riders": []
     }
   ]
 }
