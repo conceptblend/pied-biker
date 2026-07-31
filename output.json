@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T19:40:46Z",
+  "generated_at": "2026-07-31T19:42:28Z",
   "race_date": "2026-08-01",
   "races": [
     {
@@ -7,8 +7,8 @@
       "date": "2026-08-01",
       "url": "https://www.domestiquecycling.com/en/cycling-races/san-sebastian-klasikoa/2026/startlist/",
       "country": "Spain",
-      "time_start": null,
-      "time_end": null,
+      "time_start": "10:05",
+      "time_end": "15:45",
       "distance": 221.09999999999999,
       "location_start": "Donostia",
       "location_end": "Donostia",
