@@ -1,22 +1,20 @@
 {
-  "generated_at": "2026-07-31T19:42:28Z",
-  "race_date": "2026-08-01",
+  "generated_at": "2026-08-01T19:16:55Z",
+  "race_date": "2026-08-03",
   "races": [
     {
-      "name": "San Sebastian",
-      "date": "2026-08-01",
-      "url": "https://www.domestiquecycling.com/en/cycling-races/san-sebastian-klasikoa/2026/startlist/",
-      "country": "Spain",
-      "time_start": "10:05",
-      "time_end": "15:45",
-      "distance": 221.09999999999999,
-      "location_start": "Donostia",
-      "location_end": "Donostia",
-      "stage_info": null,
-      "startlist_status": "matched",
-      "matched_riders": [
-        "Remco Evenepoel"
-      ]
+      "name": "Tour de Pologne",
+      "date": "2026-08-03",
+      "url": "https://www.domestiquecycling.com/en/cycling-races/tour-de-pologne/2026/startlist/",
+      "country": "Poland",
+      "time_start": "09:30",
+      "time_end": "15:32",
+      "distance": 234,
+      "location_start": "Gdynia",
+      "location_end": "Koszalin",
+      "stage_info": "Stage 1 of 7",
+      "startlist_status": "no_match",
+      "matched_riders": []
     }
   ]
 }
