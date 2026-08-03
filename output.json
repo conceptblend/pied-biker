@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-08-02T19:17:59Z",
-  "race_date": "2026-08-03",
+  "generated_at": "2026-08-03T19:44:26Z",
+  "race_date": "2026-08-16",
   "races": [
     {
-      "name": "Tour de Pologne",
-      "date": "2026-08-03",
-      "url": "https://www.domestiquecycling.com/en/cycling-races/tour-de-pologne/2026/startlist/",
-      "country": "Poland",
-      "time_start": "09:30",
-      "time_end": "15:32",
-      "distance": 234,
-      "location_start": "Gdynia",
-      "location_end": "Koszalin",
-      "stage_info": "Stage 1 of 7",
-      "startlist_status": "no_match",
+      "name": "ADAC Cyclassics",
+      "date": "2026-08-16",
+      "url": "https://www.domestiquecycling.com/en/cycling-races/bemer-cyclassics/2026/startlist/",
+      "country": "Germany",
+      "time_start": null,
+      "time_end": null,
+      "distance": null,
+      "location_start": null,
+      "location_end": null,
+      "stage_info": null,
+      "startlist_status": "unavailable",
       "matched_riders": []
     }
   ]
