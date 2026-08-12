@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T19:08:46Z",
+  "generated_at": "2026-08-12T19:07:58Z",
   "race_date": "2026-08-16",
   "races": [
     {
@@ -7,13 +7,13 @@
       "date": "2026-08-16",
       "url": "https://www.domestiquecycling.com/en/cycling-races/bemer-cyclassics/2026/startlist/",
       "country": "Germany",
-      "time_start": null,
-      "time_end": null,
-      "distance": null,
-      "location_start": null,
-      "location_end": null,
+      "time_start": "10:50",
+      "time_end": "15:28",
+      "distance": 206,
+      "location_start": "Buxtehude",
+      "location_end": "Hamburg",
       "stage_info": null,
-      "startlist_status": "unavailable",
+      "startlist_status": "no_match",
       "matched_riders": []
     }
   ]
