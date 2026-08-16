@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-08-15T18:36:19Z",
-  "race_date": "2026-08-16",
+  "generated_at": "2026-08-16T18:35:25Z",
+  "race_date": "2026-08-19",
   "races": [
     {
-      "name": "ADAC Cyclassics",
-      "date": "2026-08-16",
-      "url": "https://www.domestiquecycling.com/en/cycling-races/bemer-cyclassics/2026/startlist/",
-      "country": "Germany",
-      "time_start": "10:50",
-      "time_end": "15:28",
-      "distance": 206,
-      "location_start": "Buxtehude",
-      "location_end": "Hamburg",
-      "stage_info": null,
+      "name": "Renewi Tour",
+      "date": "2026-08-19",
+      "url": "https://www.domestiquecycling.com/en/cycling-races/renewi-tour/2026/startlist/",
+      "country": "Belgium",
+      "time_start": null,
+      "time_end": null,
+      "distance": 191.30000000000001,
+      "location_start": "Diest",
+      "location_end": "Diest",
+      "stage_info": "Stage 1 of 5",
       "startlist_status": "no_match",
       "matched_riders": []
     }
