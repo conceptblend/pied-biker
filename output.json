@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T18:47:07Z",
+  "generated_at": "2026-08-18T18:45:30Z",
   "race_date": "2026-08-19",
   "races": [
     {
@@ -7,8 +7,8 @@
       "date": "2026-08-19",
       "url": "https://www.domestiquecycling.com/en/cycling-races/renewi-tour/2026/startlist/",
       "country": "Belgium",
-      "time_start": null,
-      "time_end": null,
+      "time_start": "12:00",
+      "time_end": "16:16",
       "distance": 191.30000000000001,
       "location_start": "Diest",
       "location_end": "Diest",
