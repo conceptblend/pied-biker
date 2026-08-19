@@ -1,20 +1,23 @@
 {
-  "generated_at": "2026-08-18T18:45:30Z",
-  "race_date": "2026-08-19",
+  "generated_at": "2026-08-19T18:41:13Z",
+  "race_date": "2026-08-22",
   "races": [
     {
-      "name": "Renewi Tour",
-      "date": "2026-08-19",
-      "url": "https://www.domestiquecycling.com/en/cycling-races/renewi-tour/2026/startlist/",
-      "country": "Belgium",
-      "time_start": "12:00",
-      "time_end": "16:16",
-      "distance": 191.30000000000001,
-      "location_start": "Diest",
-      "location_end": "Diest",
-      "stage_info": "Stage 1 of 5",
-      "startlist_status": "no_match",
-      "matched_riders": []
+      "name": "Vuelta a España",
+      "date": "2026-08-22",
+      "url": "https://www.domestiquecycling.com/en/cycling-races/vuelta-a-espana/2026/startlist/",
+      "country": "Spain",
+      "time_start": null,
+      "time_end": null,
+      "distance": null,
+      "location_start": null,
+      "location_end": null,
+      "stage_info": null,
+      "startlist_status": "matched",
+      "matched_riders": [
+        "Tadej Pogacar",
+        "Wout van Aert"
+      ]
     }
   ]
 }
