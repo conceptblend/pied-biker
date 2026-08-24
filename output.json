@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T18:36:29Z",
+  "generated_at": "2026-08-24T18:48:31Z",
   "race_date": "2026-08-30",
   "races": [
     {
@@ -9,7 +9,7 @@
       "country": "France",
       "time_start": null,
       "time_end": null,
-      "distance": null,
+      "distance": 228.30000000000001,
       "location_start": null,
       "location_end": null,
       "stage_info": null,
