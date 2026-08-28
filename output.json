@@ -1,20 +1,23 @@
 {
-  "generated_at": "2026-08-28T02:06:22Z",
-  "race_date": "2026-08-30",
+  "generated_at": "2026-08-28T22:31:32Z",
+  "race_date": "2026-08-22",
   "races": [
     {
-      "name": "Bretagne Classic",
-      "date": "2026-08-30",
-      "url": "https://www.domestiquecycling.com/en/cycling-races/bretagne-classic/2026/startlist/",
-      "country": "France",
-      "time_start": "10:45",
-      "time_end": "15:59",
-      "distance": 228.30000000000001,
-      "location_start": null,
-      "location_end": null,
-      "stage_info": null,
-      "startlist_status": "no_match",
-      "matched_riders": []
+      "name": "Vuelta a España",
+      "date": "2026-08-22",
+      "url": "https://www.domestiquecycling.com/en/cycling-races/vuelta-a-espana/2026/startlist/",
+      "country": "Spain",
+      "time_start": "12:42",
+      "time_end": "16:30",
+      "distance": 171,
+      "location_start": "Pucol",
+      "location_end": "Xeraco",
+      "stage_info": "Stage 8 of 21",
+      "startlist_status": "matched",
+      "matched_riders": [
+        "Tadej Pogacar",
+        "Wout van Aert"
+      ]
     }
   ]
 }
