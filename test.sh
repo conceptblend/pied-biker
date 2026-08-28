@@ -29,6 +29,41 @@ assert_contains() {
 }
 
 # ---------------------------------------------------------------------------
+# select_next_date unit tests (no network — fixture data)
+#
+# The live tests below only see whatever races Domestique currently has, so
+# they can't reliably exercise "a multi-stage race is ongoing" (regression
+# for the bug where an active Vuelta was skipped in favor of a later
+# one-day race). Source find_next_race.sh for its select_next_date()
+# function without running the full fetch/report pipeline (guarded by the
+# BASH_SOURCE check near the top of the file).
+# ---------------------------------------------------------------------------
+echo "select_next_date unit tests (no network):"
+
+source ./find_next_race.sh
+
+ongoing_multistage_race='{"date":"2026-08-22","title":"Vuelta a España","stage_type":"multi-stage","state":"ongoing"}'
+ongoing_oneday_race='{"date":"2026-08-28","title":"Some Ongoing One-Day Race","stage_type":"one-day","state":"ongoing"}'
+upcoming_today_race='{"date":"2026-08-28","title":"Some Race Later Today","stage_type":"one-day","state":"upcoming"}'
+future_race='{"date":"2026-08-30","title":"Bretagne Classic","stage_type":"one-day","state":"upcoming"}'
+
+assert_eq "ongoing multi-stage race is selected over a later one-day race" \
+  "2026-08-22" \
+  "$(select_next_date "$(printf '%s\n%s' "$ongoing_multistage_race" "$future_race")" "2026-08-28")"
+
+assert_eq "with no ongoing race, nearest future date is selected" \
+  "2026-08-30" \
+  "$(select_next_date "$future_race" "2026-08-28")"
+
+assert_eq "an ongoing one-day race does not override the future race (only multi-stage does)" \
+  "2026-08-30" \
+  "$(select_next_date "$(printf '%s\n%s' "$ongoing_oneday_race" "$future_race")" "2026-08-28")"
+
+assert_eq "a race merely upcoming today is skipped in favor of a later date" \
+  "2026-08-30" \
+  "$(select_next_date "$(printf '%s\n%s' "$upcoming_today_race" "$future_race")" "2026-08-28")"
+
+# ---------------------------------------------------------------------------
 # fetch_startlist.sh live test (requires network)
 # ---------------------------------------------------------------------------
 echo ""

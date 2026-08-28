@@ -12,6 +12,28 @@ SCRIPT_DIR="$(dirname "$0")"
 LOG_FILE="${SCRIPT_DIR}/debug.log"
 log() { [ -n "$BIKE_BUDDY_DEBUG" ] && echo "[$(date -u +%Y-%m-%dT%H:%M:%SZ)] [find_next_race] $*" >> "$LOG_FILE"; }
 
+# Picks which date to report as "the next race" from race JSON-lines. A
+# multi-stage race already underway (state == "ongoing") is always "the next
+# race" — its stage-1 start date is in the past, so it must bypass the
+# "strictly after today" rule below (added in a01c17d to stop a same-day
+# one-day race from being reported during the midday cron run).
+select_next_date() {
+  local races_json="$1" today="$2"
+  local ongoing_date
+  ongoing_date=$(echo "$races_json" | jq -r 'select(.state == "ongoing" and .stage_type == "multi-stage") | .date' | sort -u | head -1)
+  if [ -n "$ongoing_date" ]; then
+    echo "$ongoing_date"
+  else
+    echo "$races_json" | jq -r '.date' | sort -u | awk -v today="$today" '$0 > today' | head -1
+  fi
+}
+
+# Everything below runs only when the script is executed directly — test.sh
+# sources this file to exercise select_next_date() with fixture data instead.
+if [[ "${BASH_SOURCE[0]}" != "${0}" ]]; then
+  return 0
+fi
+
 generated_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)
 log "--- run started generated_at=$generated_at ---"
 
@@ -32,9 +54,8 @@ if [ -z "$races_json" ]; then
   exit 0
 fi
 
-# Take the date of the first (nearest) race strictly after today
 today=$(date -u +%Y-%m-%d)
-next_date=$(echo "$races_json" | jq -r '.date' | sort -u | awk -v today="$today" '$0 > today' | head -1)
+next_date=$(select_next_date "$races_json" "$today")
 log "next_date=$next_date"
 
 # Collect all races on that date
