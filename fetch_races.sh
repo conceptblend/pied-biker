@@ -63,7 +63,8 @@ echo "$race_calendar" | jq -r --argjson matchcenter "${matchcenter:-{\}}" '
       location_end:   (if $mc then $mc.location[1] else null end),
       stage_type:     (if $mc then $mc.stageType      else null end),
       stage_number:   (if $mc then $mc.stageNumber   else null end),
-      total_stages:   (if $mc then ($matchcenter.stageUrlMap[($mc.race.raceId | tostring)] | length) else null end)
+      total_stages:   (if $mc then ($matchcenter.stageUrlMap[($mc.race.raceId | tostring)] | length) else null end),
+      state:          $race.state
     }
   | @json
 '
