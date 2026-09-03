@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T20:51:40Z",
+  "generated_at": "2026-09-03T20:48:57Z",
   "race_date": "2026-08-22",
   "races": [
     {
@@ -7,12 +7,12 @@
       "date": "2026-08-22",
       "url": "https://www.domestiquecycling.com/en/cycling-races/vuelta-a-espana/2026/startlist/",
       "country": "Spain",
-      "time_start": "12:50",
+      "time_start": "12:07",
       "time_end": "16:30",
-      "distance": 151.30000000000001,
-      "location_start": "Cartagena",
-      "location_end": "Lorca",
-      "stage_info": "Stage 11 of 21",
+      "distance": 166.59999999999999,
+      "location_start": "Vera",
+      "location_end": "Calar Alto",
+      "stage_info": "Stage 12 of 21",
       "startlist_status": "matched",
       "matched_riders": [
         "Tadej Pogacar",
