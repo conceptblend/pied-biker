@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T21:22:12Z",
+  "generated_at": "2026-09-08T20:58:20Z",
   "race_date": "2026-08-22",
   "races": [
     {
@@ -7,12 +7,12 @@
       "date": "2026-08-22",
       "url": "https://www.domestiquecycling.com/en/cycling-races/vuelta-a-espana/2026/startlist/",
       "country": "Spain",
-      "time_start": "13:50",
+      "time_start": "12:05",
       "time_end": "16:30",
-      "distance": 110.2,
-      "location_start": "Palma del Rio",
-      "location_end": "Cordoba",
-      "stage_info": "Stage 15 of 21",
+      "distance": 181.09999999999999,
+      "location_start": "Cortegana",
+      "location_end": "La Rabida. Palos De La Frontiera",
+      "stage_info": "Stage 16 of 21",
       "startlist_status": "matched",
       "matched_riders": [
         "Tadej Pogacar",
