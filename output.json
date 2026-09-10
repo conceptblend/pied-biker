@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T20:46:30Z",
+  "generated_at": "2026-09-10T20:41:20Z",
   "race_date": "2026-08-22",
   "races": [
     {
@@ -7,12 +7,12 @@
       "date": "2026-08-22",
       "url": "https://www.domestiquecycling.com/en/cycling-races/vuelta-a-espana/2026/startlist/",
       "country": "Spain",
-      "time_start": "12:00",
+      "time_start": "13:06",
       "time_end": "16:30",
-      "distance": 185,
-      "location_start": "Dos Hermanas",
-      "location_end": "Sevilla",
-      "stage_info": "Stage 17 of 21",
+      "distance": 32,
+      "location_start": "El Puerto Santa Maria",
+      "location_end": "Jerez De La Frontera",
+      "stage_info": "Stage 18 of 21",
       "startlist_status": "matched",
       "matched_riders": [
         "Tadej Pogacar",
