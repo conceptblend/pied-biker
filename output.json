@@ -1,23 +1,20 @@
 {
-  "generated_at": "2026-09-13T20:34:40Z",
-  "race_date": "2026-08-22",
+  "generated_at": "2026-09-14T21:41:27Z",
+  "race_date": "2026-10-10",
   "races": [
     {
-      "name": "Vuelta a España",
-      "date": "2026-08-22",
-      "url": "https://www.domestiquecycling.com/en/cycling-races/vuelta-a-espana/2026/startlist/",
-      "country": "Spain",
-      "time_start": "15:20",
-      "time_end": "18:15",
-      "distance": 99.400000000000006,
-      "location_start": "Granada",
-      "location_end": "Granada",
-      "stage_info": "Stage 21 of 21",
-      "startlist_status": "matched",
-      "matched_riders": [
-        "Tadej Pogacar",
-        "Wout van Aert"
-      ]
+      "name": "Il Lombardia",
+      "date": "2026-10-10",
+      "url": "https://www.domestiquecycling.com/en/cycling-races/il-lombardia/2026/startlist/",
+      "country": "Italy",
+      "time_start": null,
+      "time_end": null,
+      "distance": null,
+      "location_start": null,
+      "location_end": null,
+      "stage_info": null,
+      "startlist_status": "unavailable",
+      "matched_riders": []
     }
   ]
 }
