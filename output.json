@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T20:53:35Z",
+  "generated_at": "2026-09-27T21:10:34Z",
   "race_date": "2026-10-10",
   "races": [
     {
@@ -9,9 +9,9 @@
       "country": "Italy",
       "time_start": null,
       "time_end": null,
-      "distance": null,
-      "location_start": null,
-      "location_end": null,
+      "distance": 239,
+      "location_start": "Bergamo",
+      "location_end": "Como",
       "stage_info": null,
       "startlist_status": "unavailable",
       "matched_riders": []
