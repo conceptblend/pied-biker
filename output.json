@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T22:32:44Z",
+  "generated_at": "2026-10-07T22:56:24Z",
   "race_date": "2026-10-10",
   "races": [
     {
@@ -7,14 +7,17 @@
       "date": "2026-10-10",
       "url": "https://www.domestiquecycling.com/en/cycling-races/il-lombardia/2026/startlist/",
       "country": "Italy",
-      "time_start": null,
-      "time_end": null,
+      "time_start": "09:45",
+      "time_end": "15:59",
       "distance": 239,
       "location_start": "Bergamo",
       "location_end": "Como",
       "stage_info": null,
-      "startlist_status": "unavailable",
-      "matched_riders": []
+      "startlist_status": "matched",
+      "matched_riders": [
+        "Remco Evenepoel",
+        "Paul Seixas"
+      ]
     }
   ]
 }
