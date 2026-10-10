@@ -1,23 +1,20 @@
 {
-  "generated_at": "2026-10-09T22:28:48Z",
-  "race_date": "2026-10-10",
+  "generated_at": "2026-10-10T21:25:31Z",
+  "race_date": "2026-10-13",
   "races": [
     {
-      "name": "Il Lombardia",
-      "date": "2026-10-10",
-      "url": "https://www.domestiquecycling.com/en/cycling-races/il-lombardia/2026/startlist/",
-      "country": "Italy",
-      "time_start": "09:45",
-      "time_end": "15:59",
-      "distance": 239,
-      "location_start": "Bergamo",
-      "location_end": "Como",
-      "stage_info": null,
-      "startlist_status": "matched",
-      "matched_riders": [
-        "Remco Evenepoel",
-        "Paul Seixas"
-      ]
+      "name": "Tour of Guangxi",
+      "date": "2026-10-13",
+      "url": "https://www.domestiquecycling.com/en/cycling-races/gree-tour-of-guangxi/2026/startlist/",
+      "country": "China",
+      "time_start": null,
+      "time_end": null,
+      "distance": 149.19999999999999,
+      "location_start": "Chongzuo",
+      "location_end": "Chongzuo",
+      "stage_info": "Stage 1 of 6",
+      "startlist_status": "no_match",
+      "matched_riders": []
     }
   ]
 }
